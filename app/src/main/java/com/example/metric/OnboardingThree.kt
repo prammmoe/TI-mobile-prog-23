@@ -15,5 +15,11 @@ class OnboardingThree : AppCompatActivity() {
             val intent = Intent(this@OnboardingThree, Selection::class.java)
             startActivity(intent)
         }
+
+        val skipButton: Button = findViewById(R.id.buttonSkip3)
+        skipButton.setOnClickListener {
+            val intent = Intent(this@OnboardingThree, Selection::class.java)
+            startActivity(intent)
+        }
     }
 }
