@@ -15,11 +15,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="121dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="686dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="31dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/onboarding_1"
@@ -31,15 +29,13 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="62dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="232dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="636dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="44dp"
         android:text="@string/onboarding_1_body"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -78,14 +74,15 @@
         android:layout_marginEnd="67dp"
         android:layout_marginBottom="61dp"
         android:backgroundTint="@color/metric_green"
+        android:textColor="@color/white"
         android:text="Next" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="489dp"
+        android:layout_height="457dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="147dp"
+        android:layout_marginBottom="153dp"
         app:srcCompat="@drawable/onboarding1_asset" />
 
 </RelativeLayout>
