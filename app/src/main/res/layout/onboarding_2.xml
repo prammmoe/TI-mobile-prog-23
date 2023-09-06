@@ -20,6 +20,7 @@
         android:layout_marginEnd="31dp"
         android:gravity="center"
         android:padding="10dp"
+        android:fontFamily="@font/BeVietnamPro_Regular"
         android:text="@string/onboarding_2"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -29,13 +30,15 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="62dp"
+        android:layout_height="73dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="183dp"
-        android:layout_marginEnd="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="640dp"
+        android:fontFamily="@font/BeVietnamPro_Regular"
+        android:paddingTop="14dp"
         android:text="@string/onboarding_2_body"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -60,6 +63,8 @@
         android:layout_marginStart="62dp"
         android:layout_marginEnd="223dp"
         android:layout_marginBottom="61dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"
         android:text="Skip"
         android:textColor="@color/metric_green" />
 
@@ -74,6 +79,8 @@
         android:layout_marginEnd="67dp"
         android:layout_marginBottom="61dp"
         android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"
         android:textColor="@color/white"
         android:text="Next" />
 
