@@ -22,43 +22,43 @@
         android:layout_marginTop="0dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
+        android:fontFamily="@font/BeVietnamPro_ExtraBold"
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/metric"
         android:textAlignment="center"
         android:textColor="#3D3F4F"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:fontFamily="@font/BeVietnamPro_ExtraBold"/>
-
-    <Button
-        android:id="@+id/button_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/metric"
-        android:text="Register"
-        android:fontFamily="@font/BeVietnamPro_SemiBold"
-        android:backgroundTint="#00B07B"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="50dp"
-        android:textColor="@color/white"
-        android:background="@drawable/bg_button"
-        android:textAllCaps="false"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button_login"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:layout_below="@id/button_register"
-        android:text="Log In"
-        android:fontFamily="@font/BeVietnamPro_SemiBold"
-        android:backgroundTint="#F3F6FB"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:layout_marginTop="20dp"
-        android:textColor="#9EA0AE"
+        android:layout_marginRight="30dp"
         android:background="@drawable/bg_button"
-        android:textAllCaps="false" />
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="#9EA0AE" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_below="@id/metric"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#00B07B"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

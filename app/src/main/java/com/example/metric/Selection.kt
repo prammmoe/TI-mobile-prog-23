@@ -10,13 +10,13 @@ class Selection : AppCompatActivity() {
         setContentView(R.layout.selection)
         val registerButton: Button = findViewById(R.id.button_register)
         registerButton.setOnClickListener {
-            val intent = Intent(this@Selection, register::class.java)
+            val intent = Intent(this@Selection, Register::class.java)
             startActivity(intent)
         }
 
         val loginButton: Button = findViewById(R.id.button_login)
         loginButton.setOnClickListener {
-            val intent = Intent(this@Selection, login::class.java)
+            val intent = Intent(this@Selection, Login::class.java)
             startActivity(intent)
         }
     }

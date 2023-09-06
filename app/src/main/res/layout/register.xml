@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".register">
+    tools:context=".Register">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,6 +16,7 @@
         android:layout_marginTop="211sp"/>
 
     <EditText
+        android:id="@+id/fullName"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="16sp"
@@ -30,6 +31,7 @@
         android:fontFamily="@font/BeVietnamPro_SemiBold"/>
 
     <EditText
+        android:id="@+id/emailReg"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="16sp"
@@ -44,6 +46,7 @@
         android:fontFamily="@font/BeVietnamPro_SemiBold"/>
 
     <EditText
+        android:id="@+id/passReg"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="16sp"
@@ -58,6 +61,7 @@
         android:fontFamily="@font/BeVietnamPro_SemiBold"/>
 
     <EditText
+        android:id="@+id/confirmPassReg"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="16sp"
@@ -75,12 +79,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textSize="12sp"
+        android:paddingLeft="24sp"
+        android:paddingRight="24sp"
         android:text="By creating an account, you have accepted and are subject to our terms of service."
         android:fontFamily="@font/be_vietnam_pro"
         android:paddingTop="602sp"
         android:textColor="#9EA0AE"/>
 
     <Button
+        android:id="@+id/RegButton"
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:background="@drawable/bg_button"
@@ -91,12 +99,30 @@
         android:layout_marginTop="666sp"
         android:layout_marginHorizontal="16sp"/>
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonLogin"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Joined us before? Login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="733dp"
+        android:layout_marginEnd="83dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/metric_green" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="149dp"
         android:fontFamily="@font/be_vietnam_pro"
-        android:paddingTop="739sp"
-        android:textColor="#9EA0AE"/>
+        android:text="Joined us before?"
+        android:textColor="#9EA0AE" />
 </RelativeLayout>
