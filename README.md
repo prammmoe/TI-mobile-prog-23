@@ -5,4 +5,5 @@ Metric adalah aplikasi social media analytic yang ditujukan untuk membantu UMKM 
 Disusun dan dikerjakan oleh:
 
 Rubens Juristanto 21537141027
+
 Pramuditha Muhammad Ikhwan 21537141028
