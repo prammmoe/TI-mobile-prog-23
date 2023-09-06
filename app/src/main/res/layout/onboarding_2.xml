@@ -89,4 +89,12 @@
         android:layout_marginBottom="153dp"
         app:srcCompat="@drawable/onboarding2_asset" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="513dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-49dp"
+        app:srcCompat="@drawable/background_gradient_left" />
+
 </RelativeLayout>
