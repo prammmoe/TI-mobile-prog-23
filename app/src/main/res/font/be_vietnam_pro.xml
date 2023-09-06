@@ -3,21 +3,21 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/BeVietnamPro_Regular"/>
+        android:font="@font/be_vietnam_pro_regular"/>
     <font
         android:fontStyle="normal"
         android:fontWeight="500"
-        android:font="@font/BeVietnamPro_Medium"/>
+        android:font="@font/be_vietnam_pro_medium"/>
     <font
         android:fontStyle="normal"
         android:fontWeight="600"
-        android:font="@font/BeVietnamPro_SemiBold"/>
+        android:font="@font/be_vietnam_pro_semibold"/>
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/BeVietnamPro_Bold"/>
+        android:font="@font/be_vietnam_pro_bold"/>
     <font
         android:fontStyle="normal"
         android:fontWeight="800"
-        android:font="@font/BeVietnamPro_ExtraBold"/>
+        android:font="@font/be_vietnam_pro_extrabold"/>
 </font-family>

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Register"
-        android:fontFamily="@font/BeVietnamPro_ExtraBold"
+        android:fontFamily="@font/be_vietnam_pro_extrabold"
         android:textSize="36sp"
         android:textColor="#3D3F4F"
         android:layout_marginTop="211sp"/>
@@ -28,7 +28,7 @@
         android:textColorHint="#9EA0AE"
         android:paddingLeft="40sp"
         android:paddingRight="40sp"
-        android:fontFamily="@font/BeVietnamPro_SemiBold"/>
+        android:fontFamily="@font/be_vietnam_pro_semibold"/>
 
     <EditText
         android:id="@+id/emailReg"
@@ -43,7 +43,7 @@
         android:textColorHint="#9EA0AE"
         android:paddingLeft="40sp"
         android:paddingRight="40sp"
-        android:fontFamily="@font/BeVietnamPro_SemiBold"/>
+        android:fontFamily="@font/be_vietnam_pro_semibold"/>
 
     <EditText
         android:id="@+id/passReg"
@@ -58,7 +58,7 @@
         android:textColorHint="#9EA0AE"
         android:paddingLeft="40sp"
         android:paddingRight="40sp"
-        android:fontFamily="@font/BeVietnamPro_SemiBold"/>
+        android:fontFamily="@font/be_vietnam_pro_semibold"/>
 
     <EditText
         android:id="@+id/confirmPassReg"
@@ -73,7 +73,7 @@
         android:textColorHint="#9EA0AE"
         android:paddingLeft="40sp"
         android:paddingRight="40sp"
-        android:fontFamily="@font/BeVietnamPro_SemiBold"/>
+        android:fontFamily="@font/be_vietnam_pro_semibold"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -93,7 +93,7 @@
         android:layout_height="50sp"
         android:background="@drawable/bg_button"
         android:text="Register"
-        android:fontFamily="@font/BeVietnamPro_SemiBold"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:layout_marginTop="666sp"
@@ -107,9 +107,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="202dp"
-        android:layout_marginTop="733dp"
-        android:layout_marginEnd="83dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="731dp"
+        android:layout_marginEnd="85dp"
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/metric_green" />
@@ -118,11 +118,37 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="170dp"
-        android:layout_marginBottom="149dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="743dp"
         android:fontFamily="@font/be_vietnam_pro"
         android:text="Joined us before?"
         android:textColor="#9EA0AE" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/buttonLogin"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="202dp"-->
+<!--        android:layout_marginTop="733dp"-->
+<!--        android:layout_marginEnd="83dp"-->
+<!--        android:text="Login"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/metric_green" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="170dp"-->
+<!--        android:layout_marginBottom="149dp"-->
+<!--        android:fontFamily="@font/be_vietnam_pro"-->
+<!--        android:text="Joined us before?"-->
+<!--        android:textColor="#9EA0AE" />-->
 </RelativeLayout>

@@ -21,7 +21,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/onboarding_1"
-        android:fontFamily="@font/BeVietnamPro_SemiBold"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -38,7 +38,7 @@
         android:layout_marginTop="183dp"
         android:layout_marginEnd="44dp"
         android:text="@string/onboarding_1_body"
-        android:fontFamily="@font/BeVietnamPro_Regular"
+        android:fontFamily="@font/be_vietnam_pro_regular"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="12sp" />
