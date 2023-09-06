@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Register"
+        android:fontFamily="@font/BeVietnamPro_ExtraBold"
+        android:textSize="36sp"
+        android:textColor="#3D3F4F"
+        android:layout_marginTop="211sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:layout_marginTop="279sp"
+        android:hint="Full name"
+        android:textColorHint="#9EA0AE"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:layout_marginTop="343sp"
+        android:hint="Email"
+        android:textColorHint="#9EA0AE"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:layout_marginTop="407sp"
+        android:hint="Password"
+        android:textColorHint="#9EA0AE"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:layout_marginTop="471sp"
+        android:hint="Confirm password"
+        android:textColorHint="#9EA0AE"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="By creating an account, you have accepted and are subject to our terms of service."
+        android:fontFamily="@font/be_vietnam_pro"
+        android:paddingTop="602sp"
+        android:textColor="#9EA0AE"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/bg_button"
+        android:text="Register"
+        android:fontFamily="@font/BeVietnamPro_SemiBold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="666sp"
+        android:layout_marginHorizontal="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Joined us before? Login"
+        android:fontFamily="@font/be_vietnam_pro"
+        android:paddingTop="739sp"
+        android:textColor="#9EA0AE"/>
+</RelativeLayout>

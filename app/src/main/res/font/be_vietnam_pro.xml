@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:font="@font/BeVietnamPro_Bold"/>
+    <font
+        android:font="@font/BeVietnamPro_ExtraBold"/>
+
+    <font android:font="@font/BeVietnamPro_SemiBold"/>
+</font-family>
