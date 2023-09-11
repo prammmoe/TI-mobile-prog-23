@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911159054683",
+    "project_id": "metric-2fffa",
+    "storage_bucket": "metric-2fffa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911159054683:android:b7f67b331a0f4cb154ca7e",
+        "android_client_info": {
+          "package_name": "com.example.metric"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgKXbUpVBEKmUGnqvyEwpF5yPpcDActx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
