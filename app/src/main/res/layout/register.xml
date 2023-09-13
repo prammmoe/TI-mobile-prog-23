@@ -13,7 +13,7 @@
         android:fontFamily="@font/be_vietnam_pro_extrabold"
         android:textSize="36sp"
         android:textColor="#3D3F4F"
-        android:layout_marginTop="211sp"/>
+        android:layout_marginTop="211sp" />
 
     <EditText
         android:id="@+id/fullName"
@@ -83,8 +83,8 @@
         android:paddingLeft="24sp"
         android:paddingRight="24sp"
         android:text="By creating an account, you have accepted and are subject to our terms of service."
-        android:fontFamily="@font/be_vietnam_pro"
-        android:paddingTop="602sp"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:layout_marginTop="602sp"
         android:textColor="#9EA0AE"/>
 
     <Button
@@ -99,31 +99,33 @@
         android:layout_marginTop="666sp"
         android:layout_marginHorizontal="16sp"/>
 
-    <Button
-        android:id="@+id/buttonLogin"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="731dp"
-        android:layout_marginEnd="85dp"
-        android:text="Login"
-        android:textAllCaps="false"
-        android:textColor="@color/metric_green" />
+        android:gravity="center"
+        android:textAlignment="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="739sp">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="743dp"
-        android:fontFamily="@font/be_vietnam_pro"
-        android:text="Joined us before?"
-        android:textColor="#9EA0AE" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/be_vietnam_pro_semibold"
+            android:text="Joined us before? "
+            android:textColor="#9EA0AE"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/metric_green"
+            android:fontFamily="@font/be_vietnam_pro_semibold"
+            android:textSize="12sp"/>
+    </LinearLayout>
 
     <!--    <Button-->
 <!--        android:id="@+id/buttonLogin"-->
