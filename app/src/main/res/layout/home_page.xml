@@ -39,8 +39,54 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Recent Activity"
-        android:layout_marginTop="300dp"/>
+        android:layout_height="45dp"
+        android:text="Recent Activities"
+        android:layout_marginTop="300dp"
+        android:textSize="17dp"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:textColor="#3D3F4F"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="16dp"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="345dp">
+        
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#D2E8FD"
+            android:layout_marginLeft="16dp"
+            android:textAllCaps="false"
+            android:text="Automate"
+            android:textSize="12dp"
+            android:fontFamily="@font/be_vietnam_pro_medium"
+            android:textColor="#1E578C"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#FCEFD5"
+            android:layout_marginLeft="134dp"
+            android:textAllCaps="false"
+            android:text="Schedule"
+            android:textSize="12dp"
+            android:fontFamily="@font/be_vietnam_pro_medium"
+            android:textColor="#876A2C"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#E6DEFA"
+            android:layout_marginLeft="252dp"
+            android:textAllCaps="false"
+            android:text="Insight"
+            android:textSize="12dp"
+            android:fontFamily="@font/be_vietnam_pro_medium"
+            android:textColor="#513E85"/>
+    </RelativeLayout>
 </RelativeLayout>
