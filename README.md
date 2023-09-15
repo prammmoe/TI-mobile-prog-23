@@ -8,4 +8,4 @@ Rubens Juristanto 21537141027
 
 Pramuditha Muhammad Ikhwan 21537141028
 
-## Progress terbaru disimpan di dalam branch Master
+**Progress terbaru disimpan di dalam branch Master**
