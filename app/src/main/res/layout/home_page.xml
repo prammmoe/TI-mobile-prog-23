@@ -39,9 +39,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/profile"
-            android:layout_marginLeft="295dp"
-            android:layout_marginTop="61dp"/>
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/profile" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -314,14 +314,14 @@
         </RelativeLayout>
     </LinearLayout>
 
-
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/white"
         app:menu="@menu/bottom_menu"
+        app:itemIconTint="@color/bottom_nav_default"
+        app:itemTextColor="@color/metric_green"
         />
 </RelativeLayout>
