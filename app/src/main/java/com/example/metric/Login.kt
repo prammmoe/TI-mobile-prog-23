@@ -23,5 +23,12 @@ class Login: AppCompatActivity() {
 
         val pass = findViewById<EditText>(R.id.passLog)
         val textPassword = pass.text
+
+        // ini Test
+        val loginButton: Button = findViewById(R.id.login_login)
+        loginButton.setOnClickListener {
+            val intent = Intent(this, MainPage::class.java)
+            startActivity(intent)
+        }
     }
 }

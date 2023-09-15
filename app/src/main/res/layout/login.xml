@@ -44,9 +44,8 @@
         android:fontFamily="@font/be_vietnam_pro_semibold"
         android:inputType="textPassword" />
 
-
-
     <Button
+        android:id="@+id/login_login"
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:background="@drawable/bg_button"

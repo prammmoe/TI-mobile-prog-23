@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="375dp"
-    android:layout_height="812dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainPage">
 
     <RelativeLayout
@@ -91,6 +91,10 @@
             android:fontFamily="@font/be_vietnam_pro_semibold"
             android:textColor="#3D3F4F"/>
 
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
         <Button
             android:layout_width="86sp"
             android:layout_height="27sp"
@@ -99,7 +103,7 @@
             android:textColor="@color/white"
             android:background="@drawable/bg_button"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="85sp"
+            android:layout_marginRight="10dp"
             android:fontFamily="@font/be_vietnam_pro_bold"/>
     </LinearLayout>
 
@@ -114,47 +118,56 @@
         android:gravity="center_vertical"
         android:layout_marginHorizontal="16dp"/>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="345dp">
+        android:layout_marginTop="345dp"
+        android:layout_marginHorizontal="16dp">
         
         <Button
             android:layout_width="107dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_button"
             android:backgroundTint="#D2E8FD"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="0dp"
             android:textAllCaps="false"
             android:text="Automate"
             android:textSize="12dp"
             android:fontFamily="@font/be_vietnam_pro_medium"
             android:textColor="#1E578C"/>
-
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
         <Button
             android:layout_width="107dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_button"
             android:backgroundTint="#FCEFD5"
-            android:layout_marginLeft="134dp"
+            android:layout_marginLeft="0dp"
             android:textAllCaps="false"
             android:text="Schedule"
             android:textSize="12dp"
             android:fontFamily="@font/be_vietnam_pro_medium"
             android:textColor="#876A2C"/>
 
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
         <Button
             android:layout_width="107dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_button"
             android:backgroundTint="#E6DEFA"
-            android:layout_marginLeft="252dp"
+            android:layout_marginLeft="0dp"
             android:textAllCaps="false"
             android:text="Insight"
             android:textSize="12dp"
             android:fontFamily="@font/be_vietnam_pro_medium"
             android:textColor="#513E85"/>
-    </RelativeLayout>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -168,13 +181,13 @@
         android:layout_marginHorizontal="16dp"/>
 
     <Button
-        android:layout_width="343dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="438dp"
         android:gravity="bottom"
         android:background="@drawable/trending_button"
         android:textColor="@color/white"
-        android:layout_marginStart="16dp"
+        android:layout_marginHorizontal="16dp"
         android:text="Trending photos"
         android:textAllCaps="false"
         android:paddingLeft="20dp"
@@ -182,120 +195,133 @@
         android:textSize="20dp"
         android:fontFamily="@font/be_vietnam_pro_semibold">
     </Button>
-    
-    <RelativeLayout
-        android:layout_width="164dp"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="164dp"
-        android:background="@drawable/bg_button"
-        android:backgroundTint="#F3F6FB"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="555dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:text="Impression"
-            android:fontFamily="@font/be_vietnam_pro_semibold"
-            android:textColor="#3D3F4F"
-            android:paddingTop="10dp"
-            android:paddingLeft="18dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:text="83,547"
-            android:fontFamily="@font/be_vietnam_pro_extrabold"
-            android:textColor="#3D3F4F"
-            android:paddingTop="100dp"
-            android:paddingLeft="18dp"/>
-
-        <LinearLayout
-            android:layout_width="52dp"
-            android:layout_height="18dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="128dp"
-            android:layout_marginLeft="16dp"
+        <RelativeLayout
+            android:layout_width="164dp"
+            android:layout_height="164dp"
             android:background="@drawable/bg_button"
-            android:backgroundTint="#008000">
+            android:backgroundTint="#F3F6FB"
+            android:layout_marginLeft="16dp"
+            >
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/arrow_up"
-                android:layout_gravity="center_vertical"
-                android:paddingLeft="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="48%"
-                android:fontFamily="@font/be_vietnam_pro_bold"
-                android:textColor="@color/white"
-                android:layout_gravity="center_vertical"
-                android:textSize="11dp"
-                android:layout_marginLeft="2dp"/>
-        </LinearLayout>
-    </RelativeLayout>
+                android:textSize="17dp"
+                android:text="Impression"
+                android:fontFamily="@font/be_vietnam_pro_semibold"
+                android:textColor="#3D3F4F"
+                android:paddingTop="10dp"
+                android:paddingLeft="18dp"/>
 
-    <RelativeLayout
-        android:layout_width="164dp"
-        android:layout_height="164dp"
-        android:background="@drawable/bg_button"
-        android:backgroundTint="#F3F6FB"
-        android:layout_marginLeft="195dp"
-        android:layout_marginTop="555dp"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:text="Engagement"
-            android:fontFamily="@font/be_vietnam_pro_semibold"
-            android:textColor="#3D3F4F"
-            android:paddingTop="10dp"
-            android:paddingLeft="18dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:text="5,380"
-            android:fontFamily="@font/be_vietnam_pro_extrabold"
-            android:textColor="#3D3F4F"
-            android:paddingTop="100dp"
-            android:paddingLeft="18dp"/>
-
-        <LinearLayout
-            android:layout_width="52dp"
-            android:layout_height="18dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="128dp"
-            android:layout_marginLeft="16dp"
-            android:background="@drawable/bg_button"
-            android:backgroundTint="#008000">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/arrow_up"
-                android:layout_gravity="center_vertical"
-                android:paddingLeft="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="50%"
-                android:fontFamily="@font/be_vietnam_pro_bold"
-                android:textColor="@color/white"
-                android:layout_gravity="center_vertical"
-                android:textSize="11dp"
-                android:layout_marginLeft="2dp"/>
-        </LinearLayout>
-    </RelativeLayout>
+                android:textSize="17dp"
+                android:text="83,547"
+                android:fontFamily="@font/be_vietnam_pro_extrabold"
+                android:textColor="#3D3F4F"
+                android:paddingTop="100dp"
+                android:paddingLeft="18dp"/>
+
+            <LinearLayout
+                android:layout_width="52dp"
+                android:layout_height="18dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="128dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="#008000">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_up"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="48%"
+                    android:fontFamily="@font/be_vietnam_pro_bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="2dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:layout_width="164dp"
+            android:layout_height="164dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#F3F6FB"
+            android:layout_marginRight="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Engagement"
+                android:fontFamily="@font/be_vietnam_pro_semibold"
+                android:textColor="#3D3F4F"
+                android:paddingTop="10dp"
+                android:paddingLeft="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="5,380"
+                android:fontFamily="@font/be_vietnam_pro_extrabold"
+                android:textColor="#3D3F4F"
+                android:paddingTop="100dp"
+                android:paddingLeft="18dp"/>
+
+            <LinearLayout
+                android:layout_width="52dp"
+                android:layout_height="18dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="128dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="#008000">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_up"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%"
+                    android:fontFamily="@font/be_vietnam_pro_bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="11dp"
+                    android:layout_marginLeft="2dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/white"/>
+        android:background="@color/white"
+        app:menu="@menu/bottom_menu"
+        />
 </RelativeLayout>
