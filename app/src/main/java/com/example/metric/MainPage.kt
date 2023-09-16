@@ -12,6 +12,7 @@ class MainPage : AppCompatActivity() {
         bottomNavColor()
     }
 
+//    Ini function untuk set onClickChanged warna di bottom navigation
     private fun bottomNavColor() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
 

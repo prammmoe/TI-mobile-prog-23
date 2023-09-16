@@ -30,6 +30,8 @@ class Register : AppCompatActivity() {
         }
     }
 
+
+//    ini function buat Auth Register Firebase
     private fun performRegist() {
         binding.RegButton.setOnClickListener {
             val fullName = binding.fullName.text.toString()
