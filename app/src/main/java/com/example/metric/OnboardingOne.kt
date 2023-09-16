@@ -21,5 +21,4 @@ class OnboardingOne : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
 }

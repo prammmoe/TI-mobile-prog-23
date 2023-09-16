@@ -21,6 +21,16 @@ class Register : AppCompatActivity() {
         FirebaseApp.initializeApp(this);
         firebaseAuth = FirebaseAuth.getInstance()
 
+        performRegist()
+
+        val loginText: TextView = findViewById(R.id.buttonLogin)
+        loginText.setOnClickListener {
+            val intent = Intent(this@Register, Login::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun performRegist() {
         binding.RegButton.setOnClickListener {
             val fullName = binding.fullName.text.toString()
             val email = binding.emailReg.text.toString()
@@ -43,12 +53,6 @@ class Register : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Please fill all fields.", Toast.LENGTH_SHORT).show()
             }
-        }
-
-        val loginText: TextView = findViewById(R.id.buttonLogin)
-        loginText.setOnClickListener {
-            val intent = Intent(this@Register, Login::class.java)
-            startActivity(intent)
         }
     }
 }

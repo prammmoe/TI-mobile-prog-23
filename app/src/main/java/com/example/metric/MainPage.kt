@@ -9,7 +9,10 @@ class MainPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
+        bottomNavColor()
+    }
 
+    private fun bottomNavColor() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
 
         val colorStateList = ContextCompat.getColorStateList(this, R.color.button_nav_icon_colors)
