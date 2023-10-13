@@ -8,11 +8,5 @@ Disusun dan dikerjakan oleh:
 * Pramuditha Muhammad Ikhwan (21537141028)
 =======
 
-Rubens Juristanto 21537141027
-
-Pramuditha Muhammad Ikhwan 21537141028
-
-**Progress terbaru disimpan di dalam branch Master**
-
 ![Skrinsut Metric](https://github.com/prammmoe/TI-mobile-prog-23/assets/95534357/d5bc4918-5845-4ca6-a601-d55ff0131ee8)
 >>>>>>> ba3bcf5ecf1614dcad0fb8110680073aee821147
