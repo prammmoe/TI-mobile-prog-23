@@ -7,3 +7,7 @@ Disusun dan dikerjakan oleh:
 * Pramuditha Muhammad Ikhwan (21537141028)
 
 ![Skrinsut Metric](https://github.com/prammmoe/TI-mobile-prog-23/assets/95534357/d5bc4918-5845-4ca6-a601-d55ff0131ee8)
+
+# Next Development
+
+Saat ini aplikasi sedang dalam tahap pengembangan untuk meng-consume API
