@@ -9,7 +9,6 @@ import com.example.metric.databinding.RegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.FirebaseApp;
 
-
 class Register : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var binding:RegisterBinding
