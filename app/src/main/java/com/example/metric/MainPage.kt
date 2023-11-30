@@ -9,16 +9,15 @@ class MainPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_page)
-        bottomNavColor()
+        bottomNav() // Bottom Nav Function calls
     }
 
-//    Ini function untuk set onClickChanged warna di bottom navigation
-    private fun bottomNavColor() {
+//    Bottom Navigation Bar View. Added color changed when onClick.
+    private fun bottomNav() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
 
         val colorStateList = ContextCompat.getColorStateList(this, R.color.button_nav_icon_colors)
         bottomNavigationView.itemIconTintList = colorStateList
-
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {

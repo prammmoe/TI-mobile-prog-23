@@ -17,14 +17,14 @@ class Login: AppCompatActivity() {
         binding = LoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        Ini kalo udah regis langsung klik text login aja
+//        Guide user to login if they already register
         val registerText: TextView = findViewById(R.id.buttonRegister)
         registerText.setOnClickListener {
             val intent = Intent(this@Login, Register::class.java)
             startActivity(intent)
         }
 
-//        Code initialize app di bawah ini penting
+//        Main init to get into Firebase Auth
         FirebaseApp.initializeApp(this);
         firebaseAuth = FirebaseAuth.getInstance()
         binding.loginLogin.setOnClickListener {

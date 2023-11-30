@@ -58,6 +58,7 @@
         android:textColorHint="#9EA0AE"
         android:paddingLeft="40sp"
         android:paddingRight="40sp"
+        android:inputType="textPassword"
         android:fontFamily="@font/be_vietnam_pro_semibold"/>
 
     <EditText
@@ -73,6 +74,7 @@
         android:textColorHint="#9EA0AE"
         android:paddingLeft="40sp"
         android:paddingRight="40sp"
+        android:inputType="textPassword"
         android:fontFamily="@font/be_vietnam_pro_semibold"/>
 
     <TextView
