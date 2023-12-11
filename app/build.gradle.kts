@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -58,4 +62,34 @@ dependencies {
 
     // Loading Animation
     implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.28")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
+    // JSON to Kotlin Object Converter
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Put image from Internet to ImageView
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    // ViewModel Dependencies
+    val lifecycleVersion = "2.5.1"
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleVersion")
+
+    // Library untuk Observer ViewModel
+    implementation("androidx.lifecycle:lifecycle-extensions:2.1.0")
+
+
+
+
+
+
+
+
+
+    //
 }

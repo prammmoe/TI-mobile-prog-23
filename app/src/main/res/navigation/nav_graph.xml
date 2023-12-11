@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.metricv2.HomeFragment"
+        android:name="com.example.metricv2.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/trendsFragment"
-        android:name="com.example.metricv2.TrendsFragment"
+        android:name="com.example.metricv2.fragments.TrendsFragment"
         android:label="fragment_trends"
         tools:layout="@layout/fragment_trends" />
     <fragment
         android:id="@+id/scheduleFragment"
-        android:name="com.example.metricv2.ScheduleFragment"
+        android:name="com.example.metricv2.fragments.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule" />
     <fragment
         android:id="@+id/insightFragment"
-        android:name="com.example.metricv2.InsightFragment"
+        android:name="com.example.metricv2.fragments.InsightFragment"
         android:label="fragment_insight"
         tools:layout="@layout/fragment_insight" />
 </navigation>
