@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green_splash">#00B07B</color>
+    <color name="metric_green">#00B07B</color>
+    <color name="metric_green_2">#48C09C</color>
+    <color name="bottom_nav_default">#BCBDC4</color>
 </resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:title="Home"
+        android:color="@color/metric_green"
+        android:iconTint="@color/green_splash" />
+
+    <item
+        android:id="@+id/trendsFragment"
+        android:icon="@drawable/trends"
+        android:title="Trends" />
+
+    <item
+        android:id="@+id/scheduleFragment"
+        android:icon="@drawable/schedule"
+        android:title="Schedule" />
+
+    <item
+        android:id="@+id/insightFragment"
+        android:icon="@drawable/insight"
+        android:title="Insight" />
+</menu>
