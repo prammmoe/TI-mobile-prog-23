@@ -49,4 +49,13 @@ dependencies {
     // Navigation Component
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
+
+    // Handle different screen size
+    implementation("com.intuit.sdp:sdp-android:1.1.0")
+
+    // Handle different screen and text size
+    implementation("com.intuit.ssp:ssp-android:1.1.0")
+
+    // Loading Animation
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.28")
 }
