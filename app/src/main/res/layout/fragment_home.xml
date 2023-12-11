@@ -6,36 +6,104 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-    <RelativeLayout
-        android:id="@+id/linear_header"
+    <ImageView
+        android:id="@+id/img_view_header"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_160sdp"
-        android:background="@color/metric_green"
+        android:background="@drawable/header"
         android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
 
         <Button
-            android:layout_width="@dimen/_120sdp"
+            android:id="@+id/notif_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_40ssp"
             android:text="Notifications"
             android:textAllCaps="false" />
+
+        <ImageButton
+            android:id="@+id/profile_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_person_24"
+            android:layout_marginLeft="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good Morning, Flat Earther!"
+        app:layout_constraintStart_toStartOf="@+id/top_layout"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/_10sdp" >
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/round_person_24"
-            app:tint="@color/white" />
+            app:tint="@color/black" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Good Morning, Flat Earther!" />
+            android:text="flatmoon101" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/user_name"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        app:layout_constraintTop_toBottomOf="@id/img_view_header" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Post on schedule"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="@integer/material_motion_duration_long_1"
+            android:layout_gravity="center"
+            android:textColor="#3D3F4F" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="View"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
 
 
-    </RelativeLayout>
 
 
 
