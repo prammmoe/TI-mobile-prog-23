@@ -175,8 +175,9 @@
             <LinearLayout
                 android:id="@+id/btn_recent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_34sdp"
                 android:orientation="horizontal"
+                android:gravity="center_vertical"
                 app:layout_constraintStart_toStartOf="@+id/recent_activities"
                 app:layout_constraintTop_toBottomOf="@+id/recent_activities"
                 android:layout_marginStart="@dimen/_10sdp"
@@ -189,12 +190,11 @@
                     android:background="@drawable/bg_button"
                     android:backgroundTint="#D2E8FD"
                     android:textColor="#1E578C"
-                    android:padding="@dimen/_4sdp"
                     android:fontFamily="@font/be_vietnam_pro_medium"
                     android:textAllCaps="false"
                     android:paddingLeft="@dimen/_8sdp"
                     android:paddingRight="@dimen/_8sdp"
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="@dimen/_11ssp"
                     android:text="Automate" />
                 <View
                     android:layout_width="0dp"
@@ -210,7 +210,7 @@
                     android:textAllCaps="false"
                     android:paddingLeft="@dimen/_8sdp"
                     android:paddingRight="@dimen/_8sdp"
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="@dimen/_11ssp"
                     android:text="Schedule" />
                 <View
                     android:layout_width="0dp"
@@ -226,7 +226,7 @@
                     android:textAllCaps="false"
                     android:paddingLeft="@dimen/_8sdp"
                     android:paddingRight="@dimen/_8sdp"
-                    android:textSize="@dimen/_12ssp"
+                    android:textSize="@dimen/_11ssp"
                     android:text="Insight" />
 
             </LinearLayout>
@@ -245,7 +245,7 @@
             <FrameLayout
                 android:id="@+id/frame_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_80sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="@+id/user_name"
                 app:layout_constraintTop_toBottomOf="@+id/recommendation">
@@ -264,10 +264,11 @@
                     <ImageButton
                         android:id="@+id/trending_section"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="@dimen/_90sdp"
                         android:background="@drawable/roundcorner"
                         android:backgroundTint="#F3F6FB"
                         android:gravity="bottom"
+                        android:paddingBottom="@dimen/_4sdp"
                         android:scaleType="centerCrop"
                         android:textAllCaps="false"/>
 
@@ -276,7 +277,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
-                        android:layout_marginTop="@dimen/_46sdp"
+                        android:layout_marginTop="@dimen/_44sdp"
                         android:layout_marginLeft="@dimen/_18sdp"
                         android:clickable="false"
                         android:fontFamily="@font/be_vietnam_pro_semibold"
@@ -423,7 +424,4 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
