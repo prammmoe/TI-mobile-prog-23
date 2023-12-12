@@ -4,11 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
+import com.example.metricv2.R
 import com.example.metricv2.databinding.FragmentHomeBinding
 import com.example.metricv2.viewmodel.HomeViewModel
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeFragment : Fragment() {
 
@@ -33,7 +37,6 @@ class HomeFragment : Fragment() {
 
         homeMVVM.getRandomFood()
         observeRandomFood()
-
 
     }
 
