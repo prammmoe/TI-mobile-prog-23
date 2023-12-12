@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        tools:ignore="MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/be_vietnam_pro_extrabold"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#3D3F4F"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <EditText
+        tools:ignore="MissingConstraints"
+        android:id="@+id/emailLog"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:hint="Email"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColorHint="#9EA0AE"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        tools:ignore="MissingConstraints"
+        android:id="@+id/passLog"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColorHint="#9EA0AE"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <Button
+        tools:ignore="MissingConstraints"
+        android:id="@+id/login_login"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginHorizontal="16sp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/be_vietnam_pro_bold"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <TextView
+        tools:ignore="MissingConstraints"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:text="New to us? "
+        android:textColor="#9EA0AE"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="552dp" />
+
+    <TextView
+        tools:ignore="MissingConstraints"
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:text="Register"
+        android:textColor="@color/metric_green"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="552dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

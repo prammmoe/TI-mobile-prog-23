@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <TextView
+        tools:ignore="MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/be_vietnam_pro_extrabold"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#3D3F4F"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="211sp" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:hint="Full name"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColorHint="#9EA0AE"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="279sp" />
+
+    <EditText
+        android:id="@+id/emailReg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:hint="Email"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColorHint="#9EA0AE"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="343sp" />
+
+    <EditText
+        tools:ignore="MissingConstraints"
+        android:id="@+id/passReg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColorHint="#9EA0AE"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="407sp" />
+
+    <EditText
+        tools:ignore="MissingConstraints"
+        android:id="@+id/confirmPassReg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColorHint="#9EA0AE"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="471sp" />
+
+    <TextView
+        tools:ignore="MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:gravity="center"
+        android:paddingLeft="24sp"
+        android:paddingRight="24sp"
+        android:text="By creating an account, you have accepted and are subject to our terms of service."
+        android:textColor="#9EA0AE"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="602sp" />
+
+    <Button
+        tools:ignore="MissingConstraints"
+        android:id="@+id/RegButton"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginHorizontal="16sp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="16sp"
+        tools:layout_editor_absoluteY="666sp" />
+
+    <LinearLayout
+        tools:ignore="MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="739dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/be_vietnam_pro_semibold"
+            android:text="Joined us before? "
+            android:textColor="#9EA0AE"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/be_vietnam_pro_semibold"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/metric_green"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

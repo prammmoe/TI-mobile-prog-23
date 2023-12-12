@@ -15,6 +15,15 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += mapOf(
+                    "room.schemaLocation" to "$projectDir/schemas",
+                    "room.incremental" to "true"
+                )
+            }
+        }
     }
 
     buildTypes {
@@ -83,13 +92,12 @@ dependencies {
     // Library untuk Observer ViewModel
     implementation("androidx.lifecycle:lifecycle-extensions:2.1.0")
 
+    val roomVersion = "2.6.1"
 
-
-
-
-
-
-
+    implementation("androidx.room:room-runtime:$roomVersion")
+    annotationProcessor("androidx.room:room-compiler:$roomVersion")
 
     //
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0-RC")
 }
