@@ -3,6 +3,7 @@
     <style name="Base.Theme.MetricV2" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/metric_green</item>
     </style>
 
     <style name="Theme.MetricV2" parent="Base.Theme.MetricV2" />

@@ -29,31 +29,61 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_40sdp"
                 android:gravity="center_vertical"
+                android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" >
 
-                <android.widget.Button
-                    android:id="@+id/notif_btn"
-                    android:layout_width="@dimen/_110sdp"
-                    android:layout_height="@dimen/_30sdp"
-                    android:paddingTop="@dimen/_6sdp"
-                    android:paddingBottom="@dimen/_6sdp"
-                    android:paddingStart="@dimen/_20sdp"
-                    android:paddingEnd="@dimen/_20sdp"
-                    android:background="@drawable/bg_button"
-                    android:backgroundTint="#13B081"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:fontFamily="@font/be_vietnam_pro_regular"
-                    android:text="Notifications"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false" />
+
+                <FrameLayout
+                    android:id="@+id/frame_layout_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/notif_btn"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:paddingTop="@dimen/_6sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:paddingStart="@dimen/_20sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTint="#13B081"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/be_vietnam_pro_regular"
+                        android:text="Notifications"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/round_notifications_none_24"
+                        app:tint="@color/white"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_18sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 Notifications"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:fontFamily="@font/be_vietnam_pro_semibold"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        />
+
+                </FrameLayout>
 
                 <ImageButton
                     android:id="@+id/profile_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/img"
-                    android:layout_marginStart="@dimen/_140sdp" />
+                    android:layout_marginLeft="@dimen/_120sdp" />
+
             </LinearLayout>
 
             <TextView
@@ -216,39 +246,48 @@
                 android:id="@+id/frame_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="@+id/user_name"
                 app:layout_constraintTop_toBottomOf="@+id/recommendation">
 
-                <ImageButton
-                    android:id="@+id/trending_section"
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    app:cardCornerRadius="@dimen/_18sdp"
                     app:layout_constraintStart_toStartOf="@+id/user_name"
                     app:layout_constraintTop_toBottomOf="@+id/recommendation"
-                    android:background="@drawable/roundcorner"
-                    android:textColor="@color/white"
-                    android:gravity="bottom"
-                    android:scaleType="centerCrop"
-                    android:textAllCaps="false"/>
-
-                <TextView
-                    android:id="@+id/text_textview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="@dimen/_46sdp"
-                    android:layout_marginLeft="@dimen/_18sdp"
-                    android:clickable="false"
-                    android:fontFamily="@font/be_vietnam_pro_semibold"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_20ssp"
-                    android:text="Trending Section"
+                    app:cardUseCompatPadding="false"
                     >
 
-                </TextView>
+                    <ImageButton
+                        android:id="@+id/trending_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/roundcorner"
+                        android:backgroundTint="#F3F6FB"
+                        android:gravity="bottom"
+                        android:scaleType="centerCrop"
+                        android:textAllCaps="false"/>
+
+                    <TextView
+                        android:id="@+id/text_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_46sdp"
+                        android:layout_marginLeft="@dimen/_18sdp"
+                        android:clickable="false"
+                        android:fontFamily="@font/be_vietnam_pro_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20ssp"
+                        android:text="Trending Section"
+                        >
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
 
             </FrameLayout>
 
@@ -384,5 +423,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

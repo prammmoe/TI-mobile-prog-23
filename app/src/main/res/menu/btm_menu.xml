@@ -4,8 +4,7 @@
         android:id="@+id/homeFragment"
         android:icon="@drawable/home"
         android:title="Home"
-        android:color="@color/metric_green"
-        android:iconTint="@color/green_splash" />
+        android:color="@color/metric_green" />
 
     <item
         android:id="@+id/trendsFragment"
