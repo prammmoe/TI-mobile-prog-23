@@ -1,40 +1,59 @@
 package com.example.metricv2.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.metricv2.pojo.Meal
-import com.example.metricv2.pojo.RandomFoodList
-import com.example.metricv2.retrofit.RetrofitInstance
-import retrofit2.Call
-import retrofit2.Callback
+import androidx.lifecycle.viewModelScope
+import com.example.metricv2.Repository
+import com.example.metricv2.data.remote.response.Meal
+import com.example.metricv2.data.remote.response.RandomFoodList
+import kotlinx.coroutines.launch
 import retrofit2.Response
+import java.lang.Exception
 
-class HomeViewModel():ViewModel() {
-    private var randomFoodLiveData = MutableLiveData<Meal>()
+class HomeViewModel(private val repository: Repository): ViewModel() {
 
-    fun getRandomFood() {
-        RetrofitInstance.api.getRandomFood().enqueue(object : Callback<RandomFoodList> {
-            override fun onResponse(
-                call: Call<RandomFoodList>,
-                response: Response<RandomFoodList>
-            ) {
-                if(response.body() != null) {
-                    val randomFood: Meal = response.body()!!.meals[0]
-                    randomFoodLiveData.value = randomFood
-                } else {
-                    return
-                }
-            }
-
-            override fun onFailure(call: Call<RandomFoodList>, t: Throwable) {
-                Log.d("HomeFragment", t.message.toString())
-            }
-        })
+    private val getRandomFoods = MutableLiveData<Response<RandomFoodList>>()
+    fun observeRandomFoodLiveData():LiveData<Response<RandomFoodList>>{
+        return getRandomFoods
     }
 
-    fun observeRandomFoodLiveData():LiveData<Meal>{
-        return randomFoodLiveData
+    fun getRandomFoods() {
+        viewModelScope.launch {
+            try {
+                val result = repository.getRandomFood()
+                getRandomFoods.postValue(result)
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
     }
+
+
+
+//    private var randomFoodLiveData = MutableLiveData<Meal>()
+//
+//    fun getRandomFood() {
+//        RetrofitInstance.api.getRandomFood().enqueue(object : Callback<RandomFoodList> {
+//            override fun onResponse(
+//                call: Call<RandomFoodList>,
+//                response: Response<RandomFoodList>
+//            ) {
+//                if(response.body() != null) {
+//                    val randomFood: Meal = response.body()!!.meals[0]
+//                    randomFoodLiveData.value = randomFood
+//                } else {
+//                    return
+//                }
+//            }
+//
+//            override fun onFailure(call: Call<RandomFoodList>, t: Throwable) {
+//                Log.d("HomeFragment", t.message.toString())
+//            }
+//        })
+//    }
+//
+//    fun observeRandomFoodLiveData():LiveData<Meal>{
+//        return randomFoodLiveData
+//    }
 }

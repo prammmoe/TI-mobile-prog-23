@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/text_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_140sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/be_vietnam_pro_extrabold"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#3D3F4F"
+        android:textSize="36sp"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_login"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:hint="Email"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColorHint="#9EA0AE"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="#F3F6FB"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:hint="Password"
+        android:paddingLeft="40sp"
+        android:paddingRight="40sp"
+        android:textColorHint="#9EA0AE"
+        />
+
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:id="@+id/LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginHorizontal="16sp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/be_vietnam_pro_semibold"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        />
+
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/be_vietnam_pro_semibold"
+            android:text="New to us? "
+            android:textColor="#9EA0AE"
+             />
+
+        <TextView
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/be_vietnam_pro_semibold"
+            android:text="Register"
+            android:textColor="@color/metric_green"
+             />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

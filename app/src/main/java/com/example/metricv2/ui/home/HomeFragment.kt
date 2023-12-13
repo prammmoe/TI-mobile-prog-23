@@ -1,4 +1,4 @@
-package com.example.metricv2.fragments
+package com.example.metricv2.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater

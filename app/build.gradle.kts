@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -45,6 +47,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -78,6 +81,8 @@ dependencies {
     // JSON to Kotlin Object Converter
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
+
     // Put image from Internet to ImageView
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
@@ -92,12 +97,22 @@ dependencies {
     // Library untuk Observer ViewModel
     implementation("androidx.lifecycle:lifecycle-extensions:2.1.0")
 
+
+    // Room DB
     val roomVersion = "2.6.1"
 
     implementation("androidx.room:room-runtime:$roomVersion")
-    annotationProcessor("androidx.room:room-compiler:$roomVersion")
+    kapt("androidx.room:room-compiler:$roomVersion")
+    kapt("androidx.room:room-common:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
 
-    //
-
+    // Kotlin Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0-RC")
+
+    // Dependency Injection
+    implementation("io.insert-koin:koin-android:3.1.2")
+
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.14.1")
+    kapt("com.github.bumptech.glide:compiler:4.13.2")
 }

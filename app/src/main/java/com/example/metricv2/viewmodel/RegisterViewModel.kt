@@ -1,27 +1,26 @@
 package com.example.metricv2.viewmodel
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.metricv2.data.UserDataBase
-import com.example.metricv2.data.UserEntity
-import com.example.metricv2.data.UserRepository
+import com.example.metricv2.Repository
+import com.example.metricv2.data.local.entity.UserEntity
 import kotlinx.coroutines.launch
 
-class RegisterViewModel(application: Application) : AndroidViewModel(application) {
-    private var repository : UserRepository
-    private var getUserData : LiveData<List<UserEntity>>
+class RegisterViewModel(private val repository: Repository): ViewModel() {
 
-    init {
-        val userDao = UserDataBase.getDatabase(application).userDao()
-        repository = UserRepository(userDao)
-        getUserData = repository.getData
-    }
+    private val isRegister = MutableLiveData<Boolean>()
+    fun observeIsRegister(): LiveData<Boolean> = isRegister
 
-    fun insertData(data : UserEntity) {
+    fun insertUser(user: UserEntity) {
         viewModelScope.launch {
-            repository.insertData(data)
+            try {
+                repository.insertUser(user)
+                isRegister.postValue(true)
+            } catch (e: Throwable) {
+                e.printStackTrace()
+            }
         }
     }
 }
