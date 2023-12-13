@@ -9,6 +9,7 @@
         android:id="@+id/registerFragment"
         android:name="com.example.metricv2.ui.register.RegisterFragment"
         android:label="fragment_register"
+        android:visible="false"
         tools:layout="@layout/fragment_register" >
         <action
             android:id="@+id/register_to_login"

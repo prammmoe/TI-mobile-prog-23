@@ -1,6 +1,7 @@
 package com.example.metricv2.ui.home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,16 +10,12 @@ import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
 import com.example.metricv2.databinding.FragmentHomeBinding
 import com.example.metricv2.viewmodel.HomeViewModel
+import org.koin.android.ext.android.inject
 
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
-    private lateinit var homeMVVM:HomeViewModel
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        homeMVVM = ViewModelProviders.of(this)[HomeViewModel::class.java]
-    }
+    private val viewModel: HomeViewModel by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,15 +27,16 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        homeMVVM.getRandomFood()
+        viewModel.getRandomFoods()
         observeRandomFood()
     }
 
     private fun observeRandomFood() {
-        homeMVVM.observeRandomFoodLiveData().observe(viewLifecycleOwner
+        viewModel.observeRandomFoodLiveData().observe(viewLifecycleOwner
         ) { value ->
+            Log.d("Test", "observeRandomFood: $value}")
             Glide.with(this@HomeFragment)
-                .load(value!!.strMealThumb)
+                .load(value.body()?.meals?.get(0))
                 .into(binding.trendingSection)
         }
     }
