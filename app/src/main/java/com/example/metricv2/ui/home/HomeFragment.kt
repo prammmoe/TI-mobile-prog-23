@@ -14,31 +14,32 @@ import org.koin.android.ext.android.inject
 
 class HomeFragment : Fragment() {
 
-    private lateinit var binding: FragmentHomeBinding
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
     private val viewModel: HomeViewModel by inject()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        observeData()
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.getRandomFoods()
-        observeRandomFood()
+        observeData()
     }
 
-    private fun observeRandomFood() {
+    private fun observeData() {
         viewModel.observeRandomFoodLiveData().observe(viewLifecycleOwner
-        ) { value ->
-            Log.d("Test", "observeRandomFood: $value}")
-            Glide.with(this@HomeFragment)
-                .load(value.body()?.meals?.get(0))
-                .into(binding.trendingSection)
+        ) { data ->
+                Glide.with(this@HomeFragment)
+                    .load(data.body()?.strMealThumb)
+                    .into(binding.trendingSection)
+            }
         }
-    }
-
 }

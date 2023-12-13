@@ -9,5 +9,5 @@ import retrofit2.Response
 interface ApiService {
 
     @GET("random.php")
-    suspend fun getRandomFood(): Response<RandomFoodList>
+    suspend fun getRandomFood(): Response<Meal>
 }

@@ -15,9 +15,9 @@ import java.lang.Exception
 
 class HomeViewModel(private val repository: Repository): ViewModel() {
 
-    private val getRandomFoods = MutableLiveData<Response<RandomFoodList>>()
+    private val getRandomFoods = MutableLiveData<Response<Meal>>()
 
-    fun observeRandomFoodLiveData(): LiveData<Response<RandomFoodList>> = getRandomFoods
+    fun observeRandomFoodLiveData(): LiveData<Response<Meal>> = getRandomFoods
 
     fun getRandomFoods() {
         viewModelScope.launch {

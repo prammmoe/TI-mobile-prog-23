@@ -111,3 +111,8 @@ data class Meal(
     @SerializedName("strYoutube")
     val strYoutube: String
 )
+
+data class RandomFoodList(
+    @SerializedName("meals")
+    val meals: List<Meal>
+)
