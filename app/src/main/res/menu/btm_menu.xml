@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/nav_home"
         android:icon="@drawable/home"
         android:title="Home"
         android:color="@color/metric_green" />
 
     <item
-        android:id="@+id/trendsFragment"
+        android:id="@+id/nav_trends"
         android:icon="@drawable/trends"
         android:title="Trends" />
 
     <item
-        android:id="@+id/scheduleFragment"
+        android:id="@+id/nav_schedule"
         android:icon="@drawable/schedule"
         android:title="Schedule" />
 
     <item
-        android:id="@+id/insightFragment"
+        android:id="@+id/nav_insight"
         android:icon="@drawable/insight"
         android:title="Insight" />
 </menu>

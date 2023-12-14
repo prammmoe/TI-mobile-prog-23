@@ -23,14 +23,11 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/login_to_register"
-            app:destination="@id/registerFragment" />
-        <action
             android:id="@+id/if_not_login_to_register"
             app:destination="@id/registerFragment" />
         <action
-            android:id="@+id/login_to_home"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/login_to_parent"
+            app:destination="@id/navigationParentFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -38,20 +35,20 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/trendsFragment"
-        android:name="com.example.metricv2.ui.menu.TrendsFragment"
-        android:label="fragment_trends"
-        tools:layout="@layout/fragment_trends" />
+        android:id="@+id/insightFragment"
+        android:name="com.example.metricv2.ui.menu.InsightFragment"
+        android:label="fragment_insight"
+        tools:layout="@layout/fragment_insight" />
     <fragment
         android:id="@+id/scheduleFragment"
         android:name="com.example.metricv2.ui.menu.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule" />
     <fragment
-        android:id="@+id/insightFragment"
-        android:name="com.example.metricv2.ui.menu.InsightFragment"
-        android:label="fragment_insight"
-        tools:layout="@layout/fragment_insight" />
+        android:id="@+id/trendsFragment"
+        android:name="com.example.metricv2.ui.menu.TrendsFragment"
+        android:label="fragment_trends"
+        tools:layout="@layout/fragment_trends" />
     <fragment
         android:id="@+id/navigationParentFragment"
         android:name="com.example.metricv2.NavigationParentFragment"

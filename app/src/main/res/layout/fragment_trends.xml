@@ -17,6 +17,7 @@
         android:layout_marginTop="@dimen/_40sdp"
         android:layout_marginHorizontal="@dimen/_10sdp"
         android:textSize="@dimen/_30sdp"
+        android:textColor="@color/black"
         android:text="Trends" />
 
     <TextView
@@ -30,6 +31,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginHorizontal="@dimen/_10sdp"
         android:textSize="@dimen/_18sdp"
+        android:textColor="@color/black"
         android:text="Seafood Content" />
 
     <androidx.recyclerview.widget.RecyclerView

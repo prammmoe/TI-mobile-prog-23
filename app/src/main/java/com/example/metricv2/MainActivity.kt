@@ -11,18 +11,5 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val bottomNavigation = findViewById<BottomNavigationView>(R.id.btm_nav)
-        val navController = Navigation.findNavController(this, R.id.host_fragment)
-
-        navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.loginFragment || destination.id == R.id.registerFragment) {
-                bottomNavigation.visibility == View.GONE
-            } else {
-                bottomNavigation.visibility == View.VISIBLE
-            }
-        }
-
-        NavigationUI.setupWithNavController(bottomNavigation, navController)
     }
 }

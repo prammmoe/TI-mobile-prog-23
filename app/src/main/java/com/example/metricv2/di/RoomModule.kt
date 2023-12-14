@@ -8,6 +8,7 @@ import org.koin.dsl.module
 val roomModule = module {
     single {
         Room.databaseBuilder(androidContext(), UserDataBase::class.java, "userdb")
+            .fallbackToDestructiveMigration()
             .build()
     }
 }

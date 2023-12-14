@@ -34,7 +34,7 @@ class LoginFragment : Fragment() {
             observeIsLogin().observe(requireActivity()) {
                 it.let { data ->
                     if(data != null) {
-                        findNavController().navigate(R.id.login_to_home)
+                        findNavController().navigate(R.id.login_to_parent)
                     } else {
                         Toast.makeText(requireContext(), "Wrong email and password", Toast.LENGTH_SHORT).show()
                     }
@@ -45,7 +45,7 @@ class LoginFragment : Fragment() {
 
     private fun init() {
         with(binding) {
-            LoginButton.setOnClickListener {
+            loginButton.setOnClickListener {
                 if(email.text.isNullOrBlank()) {
                     email.error = "Email must be filled"
                 }

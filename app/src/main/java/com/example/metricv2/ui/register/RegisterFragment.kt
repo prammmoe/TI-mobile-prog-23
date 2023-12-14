@@ -46,13 +46,20 @@ class RegisterFragment : Fragment() {
     }
 
     private fun init() {
+//        binding.RegButton.setOnClickListener {
+//            val name = binding.fullName.text.toString()
+//            val email = binding.email.text.toString()
+//            val password = binding.password.text.toString()
+//            val user = UserEntity(0, name, email, password)
+//            viewModel.insertUser(user)
+//        }
         with(binding) {
             RegButton.setOnClickListener {
                 val name = binding.fullName.text.toString()
                 val emailReg = binding.email.text.toString()
                 val passwordReg = binding.password.text.toString()
 
-                if (!fullName.text.isNullOrBlank() && email.text.isNullOrBlank() && password.text.isNullOrBlank() && confirmPassword.text.isNullOrBlank()) {
+                if (!fullName.text.isNullOrBlank() && !email.text.isNullOrBlank() && !password.text.isNullOrBlank() && !confirmPassword.text.isNullOrBlank()) {
                     val user = UserEntity(0, name, emailReg, passwordReg)
                     viewModel.insertUser(user)
                 } else {
@@ -70,10 +77,10 @@ class RegisterFragment : Fragment() {
                     }
                 }
             }
+         }
 
-            buttonLogin.setOnClickListener {
-                findNavController().navigate(R.id.if_not_register_to_login)
-            }
+        binding.buttonLogin.setOnClickListener {
+            findNavController().navigate(R.id.if_not_register_to_login)
         }
     }
 }

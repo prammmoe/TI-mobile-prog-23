@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_content"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_500sdp"
+    android:layout_height="@dimen/_386sdp"
     android:layout_marginBottom="@dimen/_20sdp"
     android:layout_marginHorizontal="@dimen/_10sdp"
     android:orientation="vertical"
@@ -37,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5 Notifications"
+                android:text="rubenscooking"
                 android:fontFamily="@font/be_vietnam_pro_semibold"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_10sdp"
@@ -70,10 +70,11 @@
             />
 
         <TextView
-            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/text_category"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginHorizontal="@dimen/_10sdp"
             android:fontFamily="@font/be_vietnam_pro_regular"
-            android:textSize="@dimen/_10sdp"
+            android:textSize="@dimen/_18sdp"
             android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,27 +83,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:orientation="horizontal"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/_12sdp"
-                android:layout_weight="1"
-                android:text="Total Engagement"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="@dimen/_12sdp"
-                android:layout_height="wrap_content"
-                android:text="Total Engagement"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_14sdp"
             android:layout_marginHorizontal="@dimen/_10sdp"
             android:orientation="horizontal"
@@ -110,37 +90,15 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:textSize="@dimen/_12sdp"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
                 android:layout_weight="1"
                 android:text="Total Engagement"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:textSize="@dimen/_12sdp"
                 android:layout_height="wrap_content"
-                android:text="Total Engagement"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_14sdp"
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:orientation="horizontal"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="@dimen/_12sdp"
-                android:fontFamily="@font/be_vietnam_pro_regular"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Total Engagement"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="@dimen/_12sdp"
-                android:layout_height="wrap_content"
-                android:text="Total Engagement"/>
+                android:text="8,000"/>
 
         </LinearLayout>
     </LinearLayout>
