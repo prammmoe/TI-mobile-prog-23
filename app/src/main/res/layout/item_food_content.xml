@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_content"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_500sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:backgroundTint="#F3F6FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <ImageButton
+                android:id="@+id/profile_view"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@drawable/img"
+                android:layout_marginLeft="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Notifications"
+                android:fontFamily="@font/be_vietnam_pro_semibold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5h"
+                android:fontFamily="@font/be_vietnam_pro_semibold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@color/metric_green"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/_14sdp"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/be_vietnam_pro_regular"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello there!, We're having bla bla bla" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:text="Total Engagement"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:text="Total Engagement"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Engagement"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:text="Total Engagement"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/be_vietnam_pro_regular"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Engagement"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:text="Total Engagement"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

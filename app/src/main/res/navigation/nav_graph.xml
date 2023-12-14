@@ -52,5 +52,10 @@
         android:name="com.example.metricv2.ui.menu.InsightFragment"
         android:label="fragment_insight"
         tools:layout="@layout/fragment_insight" />
+    <fragment
+        android:id="@+id/navigationParentFragment"
+        android:name="com.example.metricv2.NavigationParentFragment"
+        android:label="fragment_navigation_parent"
+        tools:layout="@layout/fragment_navigation_parent" />
 
 </navigation>

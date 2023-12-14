@@ -15,14 +15,14 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.btm_nav)
         val navController = Navigation.findNavController(this, R.id.host_fragment)
 
-        NavigationUI.setupWithNavController(bottomNavigation, navController)
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if (destination.id == R.id.loginFragment || destination.id == R.id.registerFragment) {
+                bottomNavigation.visibility == View.GONE
+            } else {
+                bottomNavigation.visibility == View.VISIBLE
+            }
+        }
 
-//        navController.addOnDestinationChangedListener { _, destination, _ ->
-//            if (destination.id == R.id.loginFragment || destination.id == R.id.registerFragment) {
-//                bottomNavigation.visibility == View.GONE
-//            } else {
-//                bottomNavigation.visibility == View.VISIBLE
-//            }
-//        }
+        NavigationUI.setupWithNavController(bottomNavigation, navController)
     }
 }

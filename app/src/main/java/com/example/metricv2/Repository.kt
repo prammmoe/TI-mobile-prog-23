@@ -15,4 +15,6 @@ class Repository(private val localRepository: LocalRepository, private val remot
         return localRepository.getUser(email, password)
     }
     suspend fun getRandomFood() = remoteRepository.getRandomFood()
+
+    suspend fun getAllFood() = remoteRepository.getAllFood()
 }

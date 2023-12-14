@@ -1,29 +1,26 @@
 package com.example.metricv2.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.metricv2.Repository
-import com.example.metricv2.data.remote.response.Meal
+import com.example.metricv2.data.remote.response.AllFoodList
 import com.example.metricv2.data.remote.response.RandomFoodList
 import kotlinx.coroutines.launch
-import retrofit2.Call
 import retrofit2.Response
 import java.lang.Exception
 
-class HomeViewModel(private val repository: Repository): ViewModel() {
+class TrendsViewModel(private val repository: Repository): ViewModel() {
+    private val getAllFoods = MutableLiveData<Response<AllFoodList>>()
 
-    private val getRandomFoods = MutableLiveData<Response<Meal>>()
+    fun observeRandomFoodLiveData(): LiveData<Response<AllFoodList>> = getAllFoods
 
-    fun observeRandomFoodLiveData(): LiveData<Response<Meal>> = getRandomFoods
-
-    fun getRandomFoods() {
+    fun getAllFoods() {
         viewModelScope.launch {
             try {
-                val result = repository.getRandomFood()
-                getRandomFoods.postValue(result)
+                val result = repository.getAllFood()
+                getAllFoods.postValue(result)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
