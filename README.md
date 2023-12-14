@@ -11,5 +11,5 @@ Requirements:
 - Menggunakan Dependency Injection
 
 Disusun dan dikerjakan oleh: 
-- [Rubens Juristanto (21537141027)](github.com/flatmoon101) 
-- [Pramuditha Muhammad Ikhwan (21537141028)](github.com/prammmoe)
+- [Rubens Juristanto (21537141027)](https://github.com/flatmoon101) 
+- [Pramuditha Muhammad Ikhwan (21537141028)](https://github.com/prammmoe)
