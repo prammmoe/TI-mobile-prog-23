@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.metricv2.databinding.FragmentNavigationParentBinding
 import com.example.metricv2.ui.home.HomeFragment
-import com.example.metricv2.ui.menu.InsightFragment
-import com.example.metricv2.ui.menu.ScheduleFragment
-import com.example.metricv2.ui.menu.TrendsFragment
+import com.example.metricv2.ui.menu.insight.InsightFragment
+import com.example.metricv2.ui.menu.schedule.ScheduleFragment
+import com.example.metricv2.ui.menu.trends.TrendsFragment
 
 
 class NavigationParentFragment : Fragment() {

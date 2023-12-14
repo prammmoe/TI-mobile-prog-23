@@ -1,18 +1,19 @@
-package com.example.metricv2.ui.menu
+package com.example.metricv2.ui.menu.schedule
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+
 import com.example.metricv2.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [InsightFragment.newInstance] factory method to
+ * Use the [ScheduleFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class InsightFragment : Fragment() {
+class ScheduleFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -27,7 +28,7 @@ class InsightFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_insight, container, false)
+        return inflater.inflate(R.layout.fragment_schedule, container, false)
     }
 
     companion object {

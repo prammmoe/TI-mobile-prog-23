@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/registerFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/registerFragment"
@@ -36,17 +36,17 @@
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/insightFragment"
-        android:name="com.example.metricv2.ui.menu.InsightFragment"
+        android:name="com.example.metricv2.ui.menu.insight.InsightFragment"
         android:label="fragment_insight"
         tools:layout="@layout/fragment_insight" />
     <fragment
         android:id="@+id/scheduleFragment"
-        android:name="com.example.metricv2.ui.menu.ScheduleFragment"
+        android:name="com.example.metricv2.ui.menu.schedule.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule" />
     <fragment
         android:id="@+id/trendsFragment"
-        android:name="com.example.metricv2.ui.menu.TrendsFragment"
+        android:name="com.example.metricv2.ui.menu.trends.TrendsFragment"
         android:label="fragment_trends"
         tools:layout="@layout/fragment_trends" />
     <fragment
@@ -54,5 +54,14 @@
         android:name="com.example.metricv2.NavigationParentFragment"
         android:label="fragment_navigation_parent"
         tools:layout="@layout/fragment_navigation_parent" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.metricv2.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/splash_to_register"
+            app:destination="@id/registerFragment" />
+    </fragment>
 
 </navigation>

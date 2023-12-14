@@ -1,4 +1,4 @@
-package com.example.metricv2.ui.menu
+package com.example.metricv2.ui.menu.trends
 
 import android.view.LayoutInflater
 import android.view.View
